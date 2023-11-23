@@ -21,4 +21,4 @@ jobs:
 
     - name: Run Katalon Tests
       run: |
-        katalonc -projectPath=path/to/your/project.prj
+        katalonc -projectPath=https://github.com/pavanblast/Katalon.git/project.prj
