@@ -9,4 +9,9 @@
       <initValue>'https://katalon-studio-samples.github.io/calculator'</initValue>
       <name>baseUrl</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://demoaut.katalon.com'</initValue>
+      <name>G_SiteURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
