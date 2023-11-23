@@ -1,0 +1,24 @@
+yaml
+name: Katalon Test
+
+on:
+  push:
+    branches:
+      - master # Change this to your main branch
+
+jobs:
+  test:
+    runs-on: windows
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Katalon
+      uses: katalon-studio/cli-action@master
+      with:
+        version: '9.0' # Change this to the desired Katalon version
+
+    - name: Run Katalon Tests
+      run: |
+        katalonc -projectPath=path/to/your/project.prj
